@@ -1,1 +1,6 @@
-{"/_not-found/page":"/_not-found","/favicon.ico/route":"/favicon.ico","/manifest.json/route":"/manifest.json","/page":"/"}
+{
+  "/favicon.ico/route": "/favicon.ico",
+  "/manifest.json/route": "/manifest.json",
+  "/_not-found/page": "/_not-found",
+  "/page": "/"
+}
