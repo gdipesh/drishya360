@@ -77,8 +77,8 @@ export default function Footer() {
                 Pokhara, Gandaki Pradesh<br />
                 Nepal<br />
                 <br />
-                <a href="mailto:hello@drishya360.com" className={styles.link}>
-                  hello@drishya360.com
+                <a href="mailto:growdipesh@gmail.com" className={styles.link}>
+                  growdipesh@gmail.com
                 </a>
               </p>
             </div>
