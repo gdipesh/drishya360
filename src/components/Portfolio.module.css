@@ -1,0 +1,205 @@
+.portfolio {
+  background: var(--obsidian);
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  color: var(--mist);
+  margin: 0.5rem 0 1.5rem;
+}
+
+.intro {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--smoke);
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+/* Masonry-style grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1.5px;
+  background: rgba(201, 169, 110, 0.08);
+  margin-bottom: 3rem;
+}
+
+/* Card base */
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--slate);
+  min-height: 240px;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+  min-height: 480px;
+}
+
+.square {
+  grid-column: span 1;
+}
+
+/* Placeholder visual */
+.placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: radial-gradient(ellipse at center, rgba(30,30,30,1) 0%, rgba(10,10,10,1) 100%);
+}
+
+.placeholderRing {
+  width: 120px;
+  height: 120px;
+  animation: rotateSlow 20s linear infinite;
+  opacity: 0.8;
+}
+
+.comingSoon {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ash);
+}
+
+/* Info overlay */
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(10,10,10,0.95) 0%, transparent 100%);
+  z-index: 2;
+}
+
+.category {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--mist);
+  margin-bottom: 0.3rem;
+}
+
+.cardLocation {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--ash);
+}
+
+.cardLocation svg {
+  flex-shrink: 0;
+  color: var(--gold);
+}
+
+/* Hover overlay */
+.hoverOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(201, 169, 110, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.card:hover .hoverOverlay {
+  opacity: 1;
+}
+
+.viewBtn {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(201, 169, 110, 0.5);
+  padding: 0.6rem 1.5rem;
+  background: rgba(10, 10, 10, 0.7);
+}
+
+/* Note */
+.note {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: var(--ash);
+  text-align: center;
+}
+
+.noteLink {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.noteLink:hover {
+  color: var(--gold-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 1;
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wide, .tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

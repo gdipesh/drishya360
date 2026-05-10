@@ -1,0 +1,226 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--obsidian);
+}
+
+/* Decorative animated ring */
+.ring {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.ring svg {
+  width: min(700px, 100vw);
+  height: min(700px, 100vw);
+  animation: rotateSlow 80s linear infinite;
+}
+
+/* Grid dot pattern */
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(201, 169, 110, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 40%, transparent 100%);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  max-width: 900px;
+}
+
+.headline {
+  margin: 1rem 0 1.5rem;
+  line-height: 1.05;
+}
+
+.headlineLight {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 300;
+  color: rgba(245, 243, 239, 0.6);
+  display: block;
+  letter-spacing: 0.03em;
+}
+
+.headlineBold {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 10vw, 8rem);
+  font-weight: 500;
+  display: block;
+  letter-spacing: 0.01em;
+}
+
+.subline {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  font-weight: 300;
+  color: var(--smoke);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+}
+
+.desktopBreak {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktopBreak { display: block; }
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--obsidian);
+  background: var(--gold);
+  padding: 0.85rem 2rem;
+  border: 1px solid var(--gold);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background: var(--gold-light);
+  border-color: var(--gold-light);
+}
+
+.btnArrow {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.btnPrimary:hover .btnArrow {
+  transform: translateX(4px);
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mist);
+  background: transparent;
+  padding: 0.85rem 2rem;
+  border: 1px solid rgba(245, 243, 239, 0.25);
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.btnSecondary:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* Stats bar */
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.statNum {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+.statLabel {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ash);
+}
+
+.statDivider {
+  width: 1px;
+  height: 32px;
+  background: rgba(201, 169, 110, 0.2);
+}
+
+/* Scroll indicator */
+.scrollHint {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  animation: fadeIn 1s ease 1.5s both;
+}
+
+.scrollLine {
+  display: block;
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, var(--gold));
+  animation: scrollAnim 2s ease-in-out infinite;
+}
+
+@keyframes scrollAnim {
+  0%, 100% { opacity: 0.3; transform: scaleY(0.7); }
+  50% { opacity: 1; transform: scaleY(1); }
+}
+
+.scrollText {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--ash);
+}
+
+/* Bottom fade */
+.fadeBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to bottom, transparent, var(--obsidian));
+  pointer-events: none;
+}
