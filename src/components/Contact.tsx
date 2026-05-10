@@ -20,14 +20,16 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = async (e: React.MouseEvent) => {
-    e.preventDefault();
-    setStatus('sending');
-    // TODO: Wire up to your form backend (Formspree, Netlify Forms, etc.)
-    await new Promise((r) => setTimeout(r, 1200));
-    setStatus('sent');
-  };
-
+const handleSubmit = async (e: React.MouseEvent) => {
+  e.preventDefault();
+  setStatus('sending');
+  const res = await fetch('/api/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(form),
+  });
+  if (res.ok) setStatus('sent');
+};
   return (
     <section id="contact" className={`${styles.contact} section`}>
       <div className="container">
