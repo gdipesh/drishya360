@@ -1304,6 +1304,10 @@ a.Contact_contactItem__Ftvhn:hover {
   opacity: 1;
 }
 
+.Portfolio_card__BrN_E:hover .Portfolio_info__eya2u{
+  display: none;
+}
+
 .Portfolio_fullscreenBtn__V_bZZ:hover {
   border-color: var(--gold);
   color: var(--gold);

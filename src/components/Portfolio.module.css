@@ -240,6 +240,10 @@
   opacity: 1;
 }
 
+.card:hover .info{
+  display: none;
+}
+
 .fullscreenBtn:hover {
   border-color: var(--gold);
   color: var(--gold);
