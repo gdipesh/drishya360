@@ -1057,188 +1057,6 @@ a.Contact_contactItem__Ftvhn:hover {
   .Navbar_burger__NeEDU { display: flex; }
 }
 
-/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/components/Services.module.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************/
-.Services_services__NWQXN {
-  background: var(--charcoal);
-  position: relative;
-}
-
-.Services_services__NWQXN::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(201,169,110,0.3), transparent);
-}
-
-.Services_header__xPqpo {
-  max-width: 640px;
-  margin-bottom: 5rem;
-}
-
-.Services_title__G5qZW {
-  font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
-  font-weight: 300;
-  color: var(--mist);
-  margin: 0.5rem 0 1.5rem;
-  line-height: 1.1;
-}
-
-.Services_titleItalic__qzBcU {
-  font-style: italic;
-  color: var(--gold);
-}
-
-.Services_intro__Tfx6Y {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 300;
-  color: var(--smoke);
-  line-height: 1.8;
-  max-width: 540px;
-}
-
-.Services_grid__SnjTi {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1.5px;
-  gap: 1.5px;
-  background: rgba(201, 169, 110, 0.1);
-  border: 1px solid rgba(201, 169, 110, 0.1);
-  margin-bottom: 4rem;
-}
-
-.Services_card__0upfP {
-  background: var(--charcoal);
-  padding: 2.5rem;
-  transition: background 0.3s ease;
-}
-
-.Services_card__0upfP:hover {
-  background: var(--slate);
-}
-
-.Services_cardTop__7hlQI {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-.Services_number__NLf1E {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  font-weight: 300;
-  color: rgba(201, 169, 110, 0.25);
-  line-height: 1;
-  flex-shrink: 0;
-  margin-top: -0.2rem;
-}
-
-.Services_titleGroup__31G8H {}
-
-.Services_cardTitle__9XssM {
-  font-family: var(--font-display);
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: var(--mist);
-  margin-bottom: 0.2rem;
-}
-
-.Services_cardSubtitle__zAJPs {
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  font-weight: 400;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--gold);
-}
-
-.Services_divider__Y7Kcn {
-  border: none;
-  border-top: 1px solid rgba(201, 169, 110, 0.15);
-  margin-bottom: 1.5rem;
-}
-
-.Services_description__2sjmX {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  font-weight: 300;
-  color: var(--smoke);
-  line-height: 1.85;
-  margin-bottom: 1.5rem;
-}
-
-.Services_features__PKzLX {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.Services_feature__uELy6 {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-family: var(--font-body);
-  font-size: 0.82rem;
-  font-weight: 400;
-  color: var(--ash);
-  letter-spacing: 0.02em;
-}
-
-.Services_featureDot__gkDlR {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--gold);
-  flex-shrink: 0;
-}
-
-/* Camera callout */
-.Services_cameraCallout__ZdvfY {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  background: rgba(201, 169, 110, 0.05);
-  border: 1px solid rgba(201, 169, 110, 0.15);
-  padding: 1.5rem 2rem;
-  max-width: 520px;
-}
-
-.Services_cameraIcon__jg7GQ {
-  width: 36px;
-  height: 36px;
-  flex-shrink: 0;
-  color: var(--gold);
-}
-
-.Services_cameraIcon__jg7GQ svg {
-  width: 100%;
-  height: 100%;
-}
-
-.Services_cameraTitle__pa5Se {
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--mist);
-  margin-bottom: 0.2rem;
-}
-
-.Services_cameraDesc__2eSuB {
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  font-weight: 300;
-  color: var(--smoke);
-  letter-spacing: 0.02em;
-}
-
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/components/Portfolio.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************/
@@ -1447,5 +1265,238 @@ a.Contact_contactItem__Ftvhn:hover {
     grid-column: span 1;
     grid-row: span 1;
   }
+}
+
+.Portfolio_tourFrame__KHlLK {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.Portfolio_fullscreenBtn__V_bZZ {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mist);
+  background: rgba(10, 10, 10, 0.75);
+  border: 1px solid rgba(201, 169, 110, 0.3);
+  padding: 0.45rem 0.85rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+.Portfolio_card__BrN_E:hover .Portfolio_fullscreenBtn__V_bZZ {
+  opacity: 1;
+}
+
+.Portfolio_fullscreenBtn__V_bZZ:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+:-webkit-full-screen .Portfolio_info__eya2u {
+  display: none;
+}
+
+:fullscreen .Portfolio_info__eya2u,
+:-webkit-full-screen .Portfolio_info__eya2u,
+:-moz-full-screen .Portfolio_info__eya2u {
+  display: none;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/components/Services.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.Services_services__NWQXN {
+  background: var(--charcoal);
+  position: relative;
+}
+
+.Services_services__NWQXN::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,169,110,0.3), transparent);
+}
+
+.Services_header__xPqpo {
+  max-width: 640px;
+  margin-bottom: 5rem;
+}
+
+.Services_title__G5qZW {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  color: var(--mist);
+  margin: 0.5rem 0 1.5rem;
+  line-height: 1.1;
+}
+
+.Services_titleItalic__qzBcU {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.Services_intro__Tfx6Y {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--smoke);
+  line-height: 1.8;
+  max-width: 540px;
+}
+
+.Services_grid__SnjTi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5px;
+  gap: 1.5px;
+  background: rgba(201, 169, 110, 0.1);
+  border: 1px solid rgba(201, 169, 110, 0.1);
+  margin-bottom: 4rem;
+}
+
+.Services_card__0upfP {
+  background: var(--charcoal);
+  padding: 2.5rem;
+  transition: background 0.3s ease;
+}
+
+.Services_card__0upfP:hover {
+  background: var(--slate);
+}
+
+.Services_cardTop__7hlQI {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.Services_number__NLf1E {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: rgba(201, 169, 110, 0.25);
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: -0.2rem;
+}
+
+.Services_titleGroup__31G8H {}
+
+.Services_cardTitle__9XssM {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--mist);
+  margin-bottom: 0.2rem;
+}
+
+.Services_cardSubtitle__zAJPs {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.Services_divider__Y7Kcn {
+  border: none;
+  border-top: 1px solid rgba(201, 169, 110, 0.15);
+  margin-bottom: 1.5rem;
+}
+
+.Services_description__2sjmX {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--smoke);
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+}
+
+.Services_features__PKzLX {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Services_feature__uELy6 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--ash);
+  letter-spacing: 0.02em;
+}
+
+.Services_featureDot__gkDlR {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* Camera callout */
+.Services_cameraCallout__ZdvfY {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(201, 169, 110, 0.05);
+  border: 1px solid rgba(201, 169, 110, 0.15);
+  padding: 1.5rem 2rem;
+  max-width: 520px;
+}
+
+.Services_cameraIcon__jg7GQ {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  color: var(--gold);
+}
+
+.Services_cameraIcon__jg7GQ svg {
+  width: 100%;
+  height: 100%;
+}
+
+.Services_cameraTitle__pa5Se {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--mist);
+  margin-bottom: 0.2rem;
+}
+
+.Services_cameraDesc__2eSuB {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: var(--smoke);
+  letter-spacing: 0.02em;
 }
 
