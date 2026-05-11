@@ -12,40 +12,40 @@ const placeholders: {
 }[] = [
   {
     id: 1,
-    title: "Lakeside Boutique Hotel",
-    location: "Pokhara, Nepal",
-    category: "Hospitality",
-    aspect: "wide",
-    embedUrl: "",
-  },
-  {
-    id: 2,
-    title: "Himalayan View Resort",
-    location: "Sarangkot, Nepal",
-    category: "Hospitality",
-    aspect: "tall",
-  },
-  {
-    id: 3,
-    title: "Heritage Homestay",
-    location: "Bandipur, Nepal",
+    title: "Jamghat Restaurant & Sekuwa Corner",
+    location: "Garamani,Birtamode Nepal",
     category: "Hospitality",
     aspect: "square",
+    embedUrl: "https://pano.cool/@bihih679673DNSG7RI/reshav-resturant",
   },
-  {
-    id: 4,
-    title: "Luxury Villa",
-    location: "Pokhara, Nepal",
-    category: "Real Estate",
-    aspect: "square",
-  },
-  {
-    id: 5,
-    title: "Annapurna Basecamp Trail",
-    location: "Annapurna, Nepal",
-    category: "Destination",
-    aspect: "wide",
-  },
+  // {
+  //   id: 2,
+  //   title: "Himalayan View Resort",
+  //   location: "Sarangkot, Nepal",
+  //   category: "Hospitality",
+  //   aspect: "tall",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Heritage Homestay",
+  //   location: "Bandipur, Nepal",
+  //   category: "Hospitality",
+  //   aspect: "square",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Luxury Villa",
+  //   location: "Pokhara, Nepal",
+  //   category: "Real Estate",
+  //   aspect: "square",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Annapurna Basecamp Trail",
+  //   location: "Annapurna, Nepal",
+  //   category: "Destination",
+  //   aspect: "wide",
+  // },
 ];
 
 export default function Portfolio() {
