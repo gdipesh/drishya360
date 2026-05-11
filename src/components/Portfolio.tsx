@@ -16,7 +16,7 @@ const placeholders: {
     location: "Garamani,Birtamode Nepal",
     category: "Hospitality",
     aspect: "square",
-    embedUrl: "https://pano.cool/@bihih679673DNSG7RI/reshav-resturant",
+    embedUrl: "https://pano.cool/@bihih679673DNSG7RI/reshab-resturant",
   },
   // {
   //   id: 2,
